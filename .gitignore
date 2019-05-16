@@ -1,0 +1,9 @@
+# dirs
+/.idea
+/target
+/apidoc/out
+/src/main/resources/db.properties
+
+
+#files
+*.iml
