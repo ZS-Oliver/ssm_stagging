@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="NO_ENCODING">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cn/idea/modules/base/exception/ServiceException.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cn/idea/modules/login/web/LoginController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cn/idea/utils/CpachaUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login/index.jsp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login/login.jsp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/login/css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/login/images" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/login/images/username.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/login/js" charset="GBK" />
   </component>
 </project>

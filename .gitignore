@@ -3,6 +3,7 @@
 /target
 /apidoc/out
 /src/main/resources/db.properties
+/test
 
 
 #files
