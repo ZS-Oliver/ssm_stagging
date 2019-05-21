@@ -3,6 +3,7 @@ package cn.idea.modules.login.vo;
 
 import cn.idea.modules.base.group.SaveGroup;
 import cn.idea.modules.base.group.UpdateGroup;
+import cn.idea.modules.base.vo.BaseVo;
 import lombok.Data;
 import org.apache.ibatis.type.Alias;
 import org.hibernate.validator.constraints.Length;
@@ -15,7 +16,7 @@ import javax.validation.constraints.Pattern;
  */
 @Data
 @Alias("userVo")
-public class UserVo {
+public class UserVo extends BaseVo {
     @NotBlank(groups = SaveGroup.class, message = "用户名不能为空")
     @Length(min = 4, max = 15, message = "用户名长度应为4-15")
     private String username; // 用户名

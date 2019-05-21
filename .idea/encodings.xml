@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" defaultCharsetForPropertiesFiles="NO_ENCODING">
+  <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/cn/idea/modules/base/exception/ServiceException.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cn/idea/modules/login/interceptor/LoginInterceptor.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/java/cn/idea/modules/login/web/LoginController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cn/idea/modules/menu/util/MenuUtil.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/java/cn/idea/utils/CpachaUtil.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login/index.jsp" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login/login.jsp" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/login/css" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/login/images" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/login/images/username.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/login/js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/menu/list.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/admin/easyui" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/admin/h-ui" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/admin/login/css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/admin/login/images" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/admin/login/images/username.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/admin/login/js" charset="GBK" />
   </component>
 </project>

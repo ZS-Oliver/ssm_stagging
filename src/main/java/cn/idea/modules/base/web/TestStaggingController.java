@@ -24,13 +24,10 @@ public class TestStaggingController {
     }
 
     @GetMapping("content/{str}")
-    public String showContent(@PathVariable String str){
-        log.info("str = {}",str);
+    public String showContent(@PathVariable String str) {
+        log.info("str = {}", str);
         return str;
     }
-
-
-
 
 
 }

@@ -42,14 +42,14 @@ public class ConflictingQVo extends BaseQVo {
         public Q build() {
             Method[] methods = clazz.getMethods();
             long numOfContainsValue = Arrays.stream(methods).filter(method -> method.getName().startsWith("get"))
-                                          .map(method -> {
-                                              try {
-                                                  return method.invoke(q);
-                                              } catch (ReflectiveOperationException e) {
-                                                  log.error("通过反射执行get方法有误，q = {}", q, e);
-                                              }
-                                              return null;
-                                          }).distinct().filter(Objects::nonNull).count();
+                    .map(method -> {
+                        try {
+                            return method.invoke(q);
+                        } catch (ReflectiveOperationException e) {
+                            log.error("通过反射执行get方法有误，q = {}", q, e);
+                        }
+                        return null;
+                    }).distinct().filter(Objects::nonNull).count();
             if (numOfContainsValue == 0) return null;
 
             return q;

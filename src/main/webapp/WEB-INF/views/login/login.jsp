@@ -8,8 +8,8 @@
     <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
     <meta name="author" content="Vincent Garreau">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" media="screen" href="../login/css/style.css">
-    <link rel="stylesheet" type="text/css" href="../login/css/reset.css">
+    <link rel="stylesheet" media="screen" href="../admin/login/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../admin/login/css/reset.css">
 <body>
 
 <div id="particles-js">
@@ -18,21 +18,21 @@
             登录
         </div>
         <div class="login-center clearfix">
-            <div class="login-center-img"><img src="../login/images/username.png"></div>
+            <div class="login-center-img"><img src="../admin/login/images/username.png"></div>
             <div class="login-center-input">
                 <input type="text" name="username" id="username" value="" placeholder="请输入您的用户名" onfocus="this.placeholder=&#39;&#39;" onblur="this.placeholder=&#39;请输入您的用户名&#39;">
                 <div class="login-center-input-text">用户名</div>
             </div>
         </div>
         <div class="login-center clearfix">
-            <div class="login-center-img"><img src="../login/images/password.png"></div>
+            <div class="login-center-img"><img src="../admin/login/images/password.png"></div>
             <div class="login-center-input">
                 <input type="password" name="password" id="password" value="" placeholder="请输入您的密码" onfocus="this.placeholder=&#39;&#39;" onblur="this.placeholder=&#39;请输入您的密码&#39;">
                 <div class="login-center-input-text">密码</div>
             </div>
         </div>
         <div class="login-center clearfix">
-            <div class="login-center-img"><img src="../login/images/cpacha.png"></div>
+            <div class="login-center-img"><img src="../admin/login/images/cpacha.png"></div>
             <div class="login-center-input">
                 <input style="width:50%;" type="text" name="cpacha" id="cpacha" value="" placeholder="请输入验证码" onfocus="this.placeholder=&#39;&#39;" onblur="this.placeholder=&#39;请输入验证码&#39;">
                 <div class="login-center-input-text">验证码</div>
@@ -47,9 +47,9 @@
     <canvas class="particles-js-canvas-el" width="1147" height="952" style="width: 100%; height: 100%;"></canvas></div>
 
 <!-- scripts -->
-<script src="../login/js/particles.min.js"></script>
-<script src="../login/js/app.js"></script>
-<script src="../login/js/jquery-1.8.0.min.js"></script>
+<script src="../admin/login/js/particles.min.js"></script>
+<script src="../admin/login/js/app.js"></script>
+<script src="../admin/login/js/jquery-1.8.0.min.js"></script>
 <script type="text/javascript">
     function hasClass(elem, cls) {
         cls = cls || '';

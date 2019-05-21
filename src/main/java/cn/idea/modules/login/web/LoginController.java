@@ -1,8 +1,10 @@
 package cn.idea.modules.login.web;
 
 import cn.idea.modules.base.exception.ServiceException;
+import cn.idea.modules.login.service.UserService;
 import cn.idea.modules.login.vo.UserVo;
 import cn.idea.utils.CpachaUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,6 +25,9 @@ import java.util.Map;
 @RequestMapping("/user")
 public class LoginController {
 
+    @Autowired
+    private UserService userService;
+
     /**
      * 登录页面
      *
@@ -32,6 +37,31 @@ public class LoginController {
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public ModelAndView login(ModelAndView model) {
         model.setViewName("login/login");
+        return model;
+    }
+
+    /**
+     * 系统登录后的欢迎页
+     *
+     * @param model
+     * @param request
+     * @return
+     */
+    @RequestMapping(value = "/welcome", method = RequestMethod.GET)
+    public ModelAndView welcome(ModelAndView model, HttpServletRequest request) {
+        model.setViewName("login/welcome");
+        return model;
+    }
+
+    /**
+     * 系统登录后的主页
+     *
+     * @param model
+     * @return
+     */
+    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    public ModelAndView index(ModelAndView model) {
+        model.setViewName("login/index");
         return model;
     }
 
@@ -82,6 +112,20 @@ public class LoginController {
             ret.put("msg", "Verification code error");
             return ret;
         }
+
+        UserVo uvo = userService.findByUsername(uv.getUsername());
+        if (uvo == null) {
+            ret.put("type", "error");
+            ret.put("msg", "username is not exists");
+            return ret;
+        }
+        if (!uv.getPassword().equals(uvo.getPassword())) {
+            ret.put("type", "error");
+            ret.put("msg", "password is false");
+            return ret;
+        }
+
+        request.getSession().setAttribute("admin", uvo);
 
         ret.put("type", "success");
         ret.put("msg", "login successful！");
